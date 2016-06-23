@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Sample AngularJS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="./normal_inheritance.js"></script>
+</head>
+<body>
+  <div ng-app="App">
+    <div ng-controller="parentController">
+      <h2>Parent</h2>
+      <ul>
+        <li>Money:{{money}}</li>
+        <li>Cars:{{cars}}</li>
+        <li>Houses:{{houses}}</li>
+      </ul>
+      <div ng-controller="childController">
+        <h3>Son</h3>
+        {{money}}<br><input ng-model="money"><br><br>
+        {{houses}}<br><input ng-model="houses.saigon">
+      </div>
+      <scope-true></scope-true>
+    <div>
+  </div>
+</body>
+</html>
